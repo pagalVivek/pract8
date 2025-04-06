@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name:"
+            android:inputType="text"
+            android:textSize="20sp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/className"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your class:"
+            android:clipToOutline="true"
+            android:inputType="text"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Select Gender"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender">
+
+            <RadioButton
+                android:id="@+id/Male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/Female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Hobbies:"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/hb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Singing" />
+
+        <CheckBox
+            android:id="@+id/hb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dancing" />
+
+        <CheckBox
+            android:id="@+id/hb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sports" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Login" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image2" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D983E9"
+            android:text="imagePreview"
+            android:textColor="@color/black"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+    </LinearLayout>
+
+</ScrollView>
